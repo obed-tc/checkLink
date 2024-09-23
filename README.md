@@ -2,70 +2,70 @@
 
 ![image](https://github.com/user-attachments/assets/ca003027-8aa1-468b-86d6-2a57f9bde43c)
 
-CheckLink es una herramienta de línea de comandos diseñada para validar y verificar varios tipos de enlaces y direcciones en línea. Desde grupos de WhatsApp hasta perfiles de redes sociales, CheckLink te ayuda a confirmar la validez y obtener información sobre diversos recursos en línea.
+CheckLink is a command-line tool designed to validate and verify various types of online links and addresses. From WhatsApp groups to social media profiles, CheckLink helps you confirm the validity and obtain information about various online resources.
 
-## 📋 Tabla de Contenidos
+## 📋 Table of Contents
 
-- [Características](#características)
-- [Requisitos Previos](#requisitos-previos)
-- [Instalación](#instalación)
-- [Configuración](#configuración)
-- [Uso](#uso)
-- [Opciones Disponibles](#opciones-disponibles)
-- [Verificaciones Masivas](#verificaciones-masivas)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Available Options](#available-options)
+- [Bulk Verifications](#bulk-verifications)
+- [Contributions](#contributions)
+- [License](#license)
 
-## ✨ Características
+## ✨ Features
 
-- Validación de grupos de WhatsApp y Telegram
-- Verificación de perfiles de Facebook e Instagram
-- Comprobación de disponibilidad de dominios DNS
-- Validación de sitios web
-- Verificación de direcciones de correo electrónico
-- Soporte para verificaciones masivas con archivos TXT
+- Validation of WhatsApp and Telegram groups
+- Verification of Facebook and Instagram profiles
+- Checking availability of DNS domains
+- Website validation
+- Email address verification
+- Support for bulk verifications using TXT files
 
-## 🛠 Requisitos Previos
+## 🛠 Prerequisites
 
 - Python 3.6+
-- pip (gestor de paquetes de Python)
-- Git (opcional, para clonar el repositorio)
+- pip (Python package manager)
+- Git (optional, for cloning the repository)
 
-## 💻 Instalación
+## 💻 Installation
 
-1. Clona el repositorio (o descárgalo como ZIP):
+1. Clone the repository (or download as ZIP):
    ```
    git clone https://github.com/obed-tc/checkLink
    ```
 
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
    ```
    cd checklink
    ```
 
-3. Instala las dependencias:
+3. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
 
-## ⚙️ Configuración
+## ⚙️ Configuration
 
-Para utilizar las funciones de verificación de correo electrónico, necesitarás tokens de API de Abstract API y MailBox Validator. Sigue estos pasos para configurarlos:
+To use the email verification functions, you'll need API tokens from Abstract API and MailBox Validator. Follow these steps to set them up:
 
-1. Regístrate en [Abstract API](https://www.abstractapi.com/) y [MailBox Validator](https://www.mailboxvalidator.com/) para obtener tus tokens API gratuitos.
+1. Sign up at [Abstract API](https://www.abstractapi.com/) and [MailBox Validator](https://www.mailboxvalidator.com/) to obtain your free API tokens.
 
-2. Abre el archivo `checklink.py` y busca las siguientes líneas:
+2. Open the `checklink.py` file and look for the following lines:
 
    ```python
-   keyAbstract = "TU TOKEN AQUI"
-   keyMailBox = "TU TOKEN AQUI"
+   keyAbstract = "YOUR TOKEN HERE"
+   keyMailBox = "YOUR TOKEN HERE"
    ```
 
-3. Reemplaza los valores de `keyAbstract` y `keyMailBox` con tus propios tokens.
+3. Replace the values of `keyAbstract` and `keyMailBox` with your own tokens.
 
-## 🚀 Uso
+## 🚀 Usage
 
-Para ejecutar CheckLink, usa el siguiente comando en la terminal:
+To run CheckLink, use the following command in the terminal:
 
 ```
 python checklink.py
@@ -73,42 +73,40 @@ python checklink.py
 
 ![image](https://github.com/user-attachments/assets/42ffc5cd-d065-45d0-a79a-df4489e65ce1)
 
+Follow the on-screen instructions to select the desired option and provide the necessary information.
 
-Sigue las instrucciones en pantalla para seleccionar la opción deseada y proporcionar la información necesaria.
+## 🔍 Available Options
 
-## 🔍 Opciones Disponibles
+1. **WhatsApp Group**: Verify the validity of WhatsApp group links.
+2. **Telegram Group**: Check the validity of Telegram group links.
+3. **Email**: Validate email addresses.
+4. **Phone Number**: (Coming soon) Verification of phone numbers.
+5. **Facebook Profile**: Validate Facebook profiles.
+6. **Instagram Profile**: Verify Instagram profiles.
+7. **DNS**: Check the availability of DNS domains.
+8. **Websites**: Verify website accessibility.
+9. **Zoom URL**: (Coming soon) Validation of Zoom links.
+10. **Google Meet URL**: (Coming soon) Verification of Google Meet links.
 
-1. **Grupo de WhatsApp**: Verifica la validez de enlaces de grupos de WhatsApp.
-2. **Grupo de Telegram**: Comprueba la validez de enlaces de grupos de Telegram.
-3. **Correo Electrónico**: Valida direcciones de correo electrónico.
-4. **Número de Teléfono**: (Próximamente) Verificación de números telefónicos.
-5. **Perfil de Facebook**: Valida perfiles de Facebook.
-6. **Perfil de Instagram**: Verifica perfiles de Instagram.
-7. **DNS**: Comprueba la disponibilidad de dominios DNS.
-8. **Sitios Web**: Verifica la accesibilidad de sitios web.
-9. **URL de Zoom**: (Próximamente) Validación de enlaces de Zoom.
-10. **URL de Google Meet**: (Próximamente) Verificación de enlaces de Google Meet.
+## 📊 Bulk Verifications
 
-## 📊 Verificaciones Masivas
+CheckLink allows for bulk verifications using TXT files. You'll find sample files for each type of verification in the repository. To use this feature:
 
-CheckLink permite realizar verificaciones masivas utilizando archivos TXT. En el repositorio encontrarás archivos de ejemplo para cada tipo de verificación. Para usar esta función:
+1. Select the desired option in the main menu.
+2. When prompted, choose the bulk verification option.
+3. Enter the path to the TXT file (e.g., `examples/whatsapp_groups.txt`).
 
-1. Selecciona la opción deseada en el menú principal.
-2. Cuando se te solicite, elige la opción de verificación masiva.
-3. Introduce la ruta del archivo TXT (por ejemplo, `ejemplos/whatsapp_groups.txt`).
+The results of bulk verifications will be saved in a new TXT file in the project directory.
+> **Note:** This content is provided for educational purposes only. Please use it responsibly.
 
-Los resultados de las verificaciones masivas se guardarán en un nuevo archivo TXT en el directorio del proyecto.
-> **Nota:** Este contenido se proporciona únicamente con fines educativos. Por favor, utilízalo de manera responsable.
+## 🤝 Contributions
 
+Contributions are welcome. Please open an issue to discuss significant changes before creating a pull request.
 
-## 🤝 Contribuciones
+## 📄 License
 
-Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cambios importantes antes de crear un pull request.
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+This project is under the MIT License. See the `LICENSE` file for more details.
 
 ---
 
-Desarrollado con ❤️ por obed-tc
+Developed with ❤️ by obed-tc
