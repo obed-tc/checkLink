@@ -1,5 +1,6 @@
 # CheckLink
 
+![image](https://github.com/user-attachments/assets/ca003027-8aa1-468b-86d6-2a57f9bde43c)
 
 CheckLink es una herramienta de línea de comandos diseñada para validar y verificar varios tipos de enlaces y direcciones en línea. Desde grupos de WhatsApp hasta perfiles de redes sociales, CheckLink te ayuda a confirmar la validez y obtener información sobre diversos recursos en línea.
 
@@ -69,6 +70,9 @@ Para ejecutar CheckLink, usa el siguiente comando en la terminal:
 ```
 python checklink.py
 ```
+
+![image](https://github.com/user-attachments/assets/42ffc5cd-d065-45d0-a79a-df4489e65ce1)
+
 
 Sigue las instrucciones en pantalla para seleccionar la opción deseada y proporcionar la información necesaria.
 
